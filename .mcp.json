@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "swebok-mcp": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "Server/dist/index.js"
+      ],
+      "env": {}
+    }
+  }
+}
