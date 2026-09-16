@@ -1,5 +1,6 @@
 import type { McpServer } from "@modelcontextprotocol/server";
 
+import { registerSwebokAgentMakerPrompt } from "./swebokAgentMaker.js";
 import { registerSwebokExplainPrompt } from "./swebokExplain.js";
 import { registerSwebokSkillMakerPrompt } from "./swebokSkillMaker.js";
 
@@ -9,4 +10,5 @@ import { registerSwebokSkillMakerPrompt } from "./swebokSkillMaker.js";
 export function registerPrompts(server: McpServer): void {
   registerSwebokExplainPrompt(server);
   registerSwebokSkillMakerPrompt(server);
+  registerSwebokAgentMakerPrompt(server);
 }

@@ -13,7 +13,7 @@ export function figureUri(id: string): string {
  * The search tool points at these via `resource_link`, so image bytes are
  * fetched on demand rather than embedded in every response.
  */
-export function registerResources(server: McpServer, retriever: Retriever): void {
+export function registerFigureResources(server: McpServer, retriever: Retriever): void {
   for (const figure of retriever.allFigures()) {
     server.registerResource(
       `figure-${figure.figure_id}`,

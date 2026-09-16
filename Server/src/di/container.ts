@@ -23,7 +23,7 @@ import { InMemoryVectorIndex } from "../infrastructure/index/inMemoryVectorIndex
 import { ChunkFileSource } from "../infrastructure/knowledgeBase/chunkFileSource.js";
 import { FigureFileSource } from "../infrastructure/knowledgeBase/figureFileSource.js";
 import { ServerFactory } from "../interface/mcp/serverFactory.js";
-import type { ServerTool } from "../interface/mcp/tools/serverTool.js";
+import type { ServerTool } from "../interface/mcp/tools/serverToolsRegistration.js";
 import { SwebokSearchTool } from "../interface/mcp/tools/swebokSearchTool.js";
 import { TYPES } from "./types.js";
 

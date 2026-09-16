@@ -13,7 +13,7 @@ function instruction(topic: string): string {
     "- Answer in the language of the user's question.",
     "- Structure of the explanation: first the definition, then an explanation of that definition, then an example, and finally a deeper look at the topic.",
     "- Precise but understandable language. Do not be afraid to write more, as long as it serves understanding.",
-    "- Figures: draw them in Mermaid or markdown when possible; attach the image (resource_link `swebok://figure/<id>`) ONLY when it cannot be represented in md/mermaid.",
+    "- Figures: the search tool returns figure data inline. If a figure includes a ```mermaid block, reproduce it verbatim in your answer — do NOT paraphrase or redraw it. If no mermaid block is present, reference the image with a resource_link to `swebok://figure/<id>` so the client can fetch it.",
     "- Cite the source where natural, e.g. [Software Requirements > <topic>, swebok-v4-ch1 pp.X-Y].",
     "",
     "At the end, ask whether everything is clear and — based on SWEBOK — suggest topics related to what the user asked about.",

@@ -9,7 +9,7 @@ import type { McpServer } from "@modelcontextprotocol/server";
  * lives next to each prompt/resource template registration via a `complete`
  * callback.
  *
- * Usage pattern — in prompts/index.ts:
+ * Usage pattern — in prompts/serverPrompt.ts:
  * ```ts
  * server.registerPrompt(
  *   "explain-topic",

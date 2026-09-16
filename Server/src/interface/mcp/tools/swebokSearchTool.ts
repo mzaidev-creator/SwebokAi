@@ -14,7 +14,7 @@ import { Retriever } from "../../../application/retriever.js";
 import { citationOf } from "../../../domain/retrieval.js";
 import type { Figure } from "../../../domain/types.js";
 import { figureUri } from "../resources/figures.js";
-import type { ServerTool } from "./serverTool.js";
+import type { ServerTool } from "./serverToolsRegistration.js";
 
 interface SearchResult {
   rank: number;

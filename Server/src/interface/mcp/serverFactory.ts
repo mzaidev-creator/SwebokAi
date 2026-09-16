@@ -4,9 +4,9 @@ import { inject, injectable, multiInject } from "inversify";
 import type { Config } from "../../config/config.js";
 import { TYPES } from "../../di/types.js";
 import { Retriever } from "../../application/retriever.js";
-import type { ServerTool } from "./tools/serverTool.js";
-import { registerResources } from "./resources/figures.js";
-import { registerPrompts } from "./prompts/index.js";
+import type { ServerTool } from "./tools/serverToolsRegistration.js";
+import { registerResources } from "./resources/serverResourceRegistration.js";
+import { registerPrompts } from "./prompts/serverPromptsRegistration.js";
 import { registerCompletions } from "./completions/completions.js";
 
 /**
@@ -18,9 +18,9 @@ import { registerCompletions } from "./completions/completions.js";
  *
  * Extension points:
  *  - tools (ServerTool[])       — client calls server; each tool.register(server)
- *  - resources/figures.ts       — registerResources()   (client reads server data)
- *  - prompts/index.ts           — registerPrompts()      (client uses server templates;
- *                                 add a prompt by registering it there, not here)
+ *  - resources/serverResourceRegistration.ts — registerResources()   (client reads server data)
+ *  - prompts/serverPromptsRegistration.ts    — registerPrompts()      (client uses server templates;
+ *                                             add a prompt by registering it there, not here)
  *  - completions/completions.ts — registerCompletions()  (argument autocompletion)
  */
 @injectable()
