@@ -24,6 +24,3 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
-
-# Large binary / generated knowledge-base artefacts
-KnowledgeBase/vectors/vectors.npz
